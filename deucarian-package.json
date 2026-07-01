@@ -1,0 +1,29 @@
+{
+  "packageId": "com.deucarian.auto-defense-suite",
+  "displayName": "Deucarian Auto Defense Suite",
+  "ownedCapabilities": [],
+  "runtimeAssemblies": [],
+  "editorAssemblies": [],
+  "sampleAssemblies": [],
+  "testAssemblies": [],
+  "requiredDependencies": [
+    "com.deucarian.gameplay-foundation",
+    "com.deucarian.persistence",
+    "com.deucarian.progression",
+    "com.deucarian.combat",
+    "com.deucarian.encounters",
+    "com.deucarian.world-spawning",
+    "com.deucarian.world-navigation",
+    "com.deucarian.defense-games",
+    "com.deucarian.attacks",
+    "com.deucarian.projectiles",
+    "com.deucarian.weapon-systems",
+    "com.deucarian.auto-defense",
+    "com.deucarian.run-upgrades",
+    "com.deucarian.idle-progression"
+  ],
+  "optionalVersionDefinedDependencies": [],
+  "allowedDirectDebugCalls": [],
+  "allowedDirectUnityObjectLifetimeCalls": [],
+  "expectedSamplesRoot": ""
+}
