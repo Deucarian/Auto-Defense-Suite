@@ -16,7 +16,7 @@ Registered capabilities:
 
 This package must not own:
 
-- Runtime gameplay implementation, starter scenes, sample game content, editor authoring frameworks, package installation behavior, registry governance, template-specific balance, or product logic.
+- Runtime gameplay implementation, product starter scenes, template content, editor authoring frameworks, package installation behavior, registry governance, template-specific balance, or product logic.
 
 ## Dependencies
 
@@ -52,7 +52,8 @@ Architecture exceptions:
 ## Policies
 
 - Keep the suite lean and behavior-free.
-- Do not add runtime assemblies, editor UI, template scenes, or local copies of lower-package helpers.
+- Own the generic multi-package composition sample required by the suite sample contract.
+- Do not add runtime assemblies, editor UI, product/template scenes, or local copies of lower-package helpers.
 - Update `package.json`, `deucarian-package.json`, Package Registry, and fallback catalogs together if the suite dependency list changes.
 - Logging: Do not introduce direct Unity Debug calls.
 - Unity object lifetime: This package should not own Unity object cleanup.
