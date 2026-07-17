@@ -27,14 +27,15 @@ The suite installs the reusable Auto Defense toolset:
 
 Users who already have a Unity project should not have to know the complete stack order by memory. The suite gives those users one package to install when they want the Auto Defense systems available.
 
-The suite is especially useful before the template exists, because it gives development projects, validation projects, and eventual Package Registry users a single install target for the toolset.
+The suite also owns one isolated composition sample so disposable validation hosts
+can verify that the complete stack compiles and runs together.
 
 ## What It Does Not Own
 
 The suite does not own:
 
-- scenes
-- prefabs
+- product or starter-game scenes
+- product prefabs
 - placeholder art or audio
 - example balance
 - enemies, weapons, modules, or catalogs
@@ -43,12 +44,14 @@ The suite does not own:
 - save-game glue code
 - offline reward glue code
 - run upgrade adapters
-- gameplay samples beyond tiny install validation, if ever needed
+- template-specific gameplay samples
 
-Those belong in focused packages, integrations, samples, or the future template.
+Those belong in focused packages, integrations, or templates. The generic
+`Samples~/BasicAutoDefense` scene is the suite's composition validation asset.
 
 ## Runtime Code Policy
 
-The suite currently has no runtime assembly.
+The suite has no production runtime assembly. Its sample assembly is imported only
+when the composition sample is requested.
 
 Namespace `Deucarian.AutoDefenseSuite` is reserved for a future tiny marker or install-validation helper only if Unity validation proves one is useful. Meaningful gameplay behavior must stay in focused packages.

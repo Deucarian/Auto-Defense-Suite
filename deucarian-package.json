@@ -1,10 +1,13 @@
 {
   "packageId": "com.deucarian.auto-defense-suite",
   "displayName": "Deucarian Auto Defense Suite",
+  "samplePolicy": "composition",
   "ownedCapabilities": [],
   "runtimeAssemblies": [],
   "editorAssemblies": [],
-  "sampleAssemblies": [],
+  "sampleAssemblies": [
+    "Deucarian.AutoDefenseSuite.BasicAutoDefenseSample"
+  ],
   "testAssemblies": [],
   "requiredDependencies": [
     "com.deucarian.gameplay-foundation",
@@ -24,6 +27,11 @@
   ],
   "optionalVersionDefinedDependencies": [],
   "allowedDirectDebugCalls": [],
-  "allowedDirectUnityObjectLifetimeCalls": [],
-  "expectedSamplesRoot": ""
+  "allowedDirectUnityObjectLifetimeCalls": [
+    {
+      "file": "Samples~/BasicAutoDefense/BasicAutoDefenseSample.cs",
+      "reason": "The imported composition sample owns its transient demonstration prefabs and root object and tears them down when the sample controller is destroyed."
+    }
+  ],
+  "expectedSamplesRoot": "Samples~/BasicAutoDefense"
 }

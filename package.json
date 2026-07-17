@@ -1,6 +1,6 @@
 {
   "name": "com.deucarian.auto-defense-suite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Deucarian Auto Defense Suite",
   "description": "Lean dependency bundle that installs the Deucarian Auto Defense gameplay stack without starter-game content.",
   "unity": "6000.3",
@@ -20,19 +20,26 @@
     "tower-defense"
   ],
   "dependencies": {
-    "com.deucarian.gameplay-foundation": "0.1.0",
-    "com.deucarian.persistence": "0.1.0",
-    "com.deucarian.progression": "0.1.0",
-    "com.deucarian.combat": "0.1.0",
-    "com.deucarian.encounters": "0.1.0",
-    "com.deucarian.world-spawning": "0.2.0",
-    "com.deucarian.world-navigation": "0.1.0",
-    "com.deucarian.defense-games": "0.1.0",
-    "com.deucarian.attacks": "0.1.0",
-    "com.deucarian.projectiles": "0.2.0",
-    "com.deucarian.weapon-systems": "0.1.0",
-    "com.deucarian.auto-defense": "0.1.0",
-    "com.deucarian.run-upgrades": "0.1.0",
-    "com.deucarian.idle-progression": "0.1.0"
-  }
+    "com.deucarian.gameplay-foundation": "0.1.1",
+    "com.deucarian.persistence": "0.1.1",
+    "com.deucarian.progression": "0.1.1",
+    "com.deucarian.combat": "0.1.1",
+    "com.deucarian.encounters": "0.1.1",
+    "com.deucarian.world-spawning": "0.2.1",
+    "com.deucarian.world-navigation": "0.1.1",
+    "com.deucarian.defense-games": "0.1.1",
+    "com.deucarian.attacks": "0.1.1",
+    "com.deucarian.projectiles": "0.2.1",
+    "com.deucarian.weapon-systems": "0.1.1",
+    "com.deucarian.auto-defense": "0.1.1",
+    "com.deucarian.run-upgrades": "0.1.1",
+    "com.deucarian.idle-progression": "0.1.1"
+  },
+  "samples": [
+    {
+      "displayName": "Basic Auto Defense Composition",
+      "description": "Full-stack auto-defense composition with persistence, progression, run upgrades, and idle rewards.",
+      "path": "Samples~/BasicAutoDefense"
+    }
+  ]
 }
