@@ -16,8 +16,11 @@ Template = playable starter game
 - dependency documentation
 - suite/template boundary documentation
 - import and dependency-resolution validation notes
+- one generic multi-package composition sample
 
-The suite does not create gameplay content.
+The suite sample proves that the installed packages compose. It remains primitive,
+generic, and isolated under `Samples~`; it is not a starter game or source of
+product balance.
 
 ## Future Template
 
@@ -34,13 +37,17 @@ The suite does not create gameplay content.
 - setup wizard
 - "make your own game from this" guide
 
-The template should depend on `com.deucarian.auto-defense-suite` instead of duplicating the full dependency list.
+The template depends on `com.deucarian.auto-defense-suite` for installation and
+also declares packages referenced directly by its own assemblies.
 
-## Current Auto Defense Sample
+## Composition Sample
 
-`Auto-Defense/Samples~/BasicAutoDefense` remains a package-contained sample. It can inform the future template, but it should not be moved into the suite.
+`Auto-Defense-Suite/Samples~/BasicAutoDefense` owns the full-stack composition
+example, including persistence, progression, run upgrades, and idle rewards.
 
-The sample should remain small, primitive, and useful for proving package composition. The template can grow into a playable starter game with scenes, prefabs, setup flow, and stronger authoring guidance.
+`Auto-Defense/Samples~/LeanAutoDefense` demonstrates only the focused framework
+and its declared dependencies. The template remains the owner of playable product
+content, prefabs, setup flow, and stronger authoring guidance.
 
 ## Future Work
 
